@@ -18,6 +18,7 @@ import java.awt.Font;
 
 public class KioskMain extends JFrame {
 	// 변동사항 테스트입니다. 
+	// pull TEST
 	JPanel mainPanel;
 	JButton searchByPass, searchByTicket, searchByAirplane, searchByGate, logobutton;
 
