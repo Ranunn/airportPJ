@@ -17,11 +17,10 @@ import java.awt.Color;
 import java.awt.Font;
 
 public class KioskMain extends JFrame {
-	// 변동사항 테스트입니다. 
-	// pull TEST
+
 	JPanel mainPanel;
 	JButton searchByPass, searchByTicket, searchByAirplane, searchByGate, logobutton;
-
+	pg1_1 page1_1;
 	/**
 	 * Launch the application.
 	 */
@@ -42,6 +41,10 @@ public class KioskMain extends JFrame {
 	 * Create the frame.
 	 */
 	public KioskMain() {
+		
+		page1_1 = new pg1_1();
+		
+		setTitle("Airport");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 550, 400);
 		mainPanel = new JPanel();
@@ -82,12 +85,13 @@ public class KioskMain extends JFrame {
 		logobutton.setEnabled(false);
 		logobutton.setBounds(336, 311, 186, 40);
 		logobutton.setOpaque(false);	
-		mainPanel.add(logobutton);
+//		mainPanel.add(logobutton);
 
 		// 버튼 이벤트 핸들러
 		searchByPass.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				JOptionPane.showMessageDialog(null, "여권번호로 예약 조회");
+				
 			}
 		});
 		searchByTicket.addActionListener(new ActionListener() {
