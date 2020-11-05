@@ -31,7 +31,7 @@ public class pg4_1 extends JFrame {
 			}
 		});
 	}
-
+//public 
 	/**
 	 * Create the frame.
 	 */
