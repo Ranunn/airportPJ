@@ -48,8 +48,5 @@ public class pg1_2pg2_2 extends JFrame {
 		contentPane.add(btnNewButton);
 	}
 	
-	public class button_array{
-		public static void main(String[] args)
-	}
-
+	
 }
