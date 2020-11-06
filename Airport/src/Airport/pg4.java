@@ -75,5 +75,11 @@ public class pg4 extends JFrame {
 		returnHome.setBounds(301, 10, 121, 23);
 		page4.add(returnHome);
 		
+		
+		
+		
+		
+		
+		
 	} // end of 생성자함수
 }
