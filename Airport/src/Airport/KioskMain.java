@@ -80,12 +80,7 @@ public class KioskMain extends JFrame {
 		searchByGate.setBounds(293, 192, 160, 90);
 		mainPanel.add(searchByGate);
 
-		logobutton = new JButton("", new ImageIcon("src/Image/kosmo02.png"));
-		logobutton.setBackground(Color.WHITE);
-		logobutton.setEnabled(false);
-		logobutton.setBounds(336, 311, 186, 40);
-		logobutton.setOpaque(false);	
-//		mainPanel.add(logobutton);
+
 
 		// 버튼 이벤트 핸들러
 		searchByPass.addActionListener(new ActionListener() {
@@ -112,30 +107,6 @@ public class KioskMain extends JFrame {
 
 	} // end of 생성자 함수
 
-	protected void paintComponent(Graphics g) {
-		g.fillOval(0, 0, getSize().width - 1, getSize().height - 1);
 
-		super.paintComponents(g);
-	}
-
-	protected void paintBorder(Graphics g) {
-		Graphics2D graphics = (Graphics2D) g;
-		graphics.fillRoundRect(0, 0, getSize().width - 1, getSize().height - 1, 3, 3);
-	}
-	
-	void decorate() {
-		setBorderPainted(false);
-		setOpaque(false);
-	}
-
-	private void setOpaque(boolean b) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private void setBorderPainted(boolean b) {
-		// TODO Auto-generated method stub
-		
-	}
 
 }

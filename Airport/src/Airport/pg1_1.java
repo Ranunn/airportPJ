@@ -12,8 +12,8 @@ import javax.swing.JButton;
 
 public class pg1_1 extends JFrame {
 
-	private JPanel contentPane;
-	private final JLabel lblNewLabel = new JLabel("고객님의 여권번호를 입력해 주십시오.");
+	private JPanel page1;
+	private final JLabel passNumMsg;
 	private JTextField textField;
 
 	/**
@@ -30,37 +30,40 @@ public class pg1_1 extends JFrame {
 				}
 			}
 		});
-	}
+	} // end of 메인함수
 
 	/**
 	 * Create the frame.
 	 */
 	public pg1_1() {
+		
+		passNumMsg = new JLabel("고객님의 여권번호를 입력해 주십시오.");
+		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
-		contentPane = new JPanel();
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		setContentPane(contentPane);
-		contentPane.setLayout(null);
-		lblNewLabel.setBounds(51, 54, 244, 31);
-		contentPane.add(lblNewLabel);
+		page1 = new JPanel();
+		page1.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(page1);
+		page1.setLayout(null);
+		passNumMsg.setBounds(51, 54, 244, 31);
+		page1.add(passNumMsg);
 		
-		JLabel lblNewLabel_1 = new JLabel("여권번호");
-		lblNewLabel_1.setBounds(51, 105, 68, 31);
-		contentPane.add(lblNewLabel_1);
+		JLabel passNum = new JLabel("여권번호");
+		passNum.setBounds(51, 105, 68, 31);
+		page1.add(passNum);
 		
 		textField = new JTextField();
 		textField.setBounds(133, 110, 206, 21);
-		contentPane.add(textField);
+		page1.add(textField);
 		textField.setColumns(10);
 		
-		JButton btnNewButton = new JButton("예약 조회");
-		btnNewButton.setBounds(170, 195, 97, 23);
-		contentPane.add(btnNewButton);
+		JButton reserveSearch = new JButton("예약 조회");
+		reserveSearch.setBounds(170, 195, 97, 23);
+		page1.add(reserveSearch);
 		
-		JButton btnNewButton_1 = new JButton("홈으로 돌아가기");
-		btnNewButton_1.setBounds(301, 10, 121, 23);
-		contentPane.add(btnNewButton_1);
+		JButton returnHome = new JButton("홈으로 돌아가기");
+		returnHome.setBounds(301, 10, 121, 23);
+		page1.add(returnHome);
 	}
 }
 	
